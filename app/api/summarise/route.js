@@ -3,7 +3,8 @@ import { spawn } from 'child_process';
 export async function POST(req) {
   try {
     const body = await req.json();
-    const userCode = body.code;
+    console.log('Request body:', body); // Log the request body for debugging
+    const userCode = body;
 
     return new Promise((resolve, reject) => {
       const python = spawn('python', [

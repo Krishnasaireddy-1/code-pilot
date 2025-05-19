@@ -8,7 +8,7 @@ const CodeEditor = dynamic(() => import("../components/CodeEditor"), { ssr: fals
 export default function Code() {
   return (
     <Layout>
-      <h1 className="text-2xl font-bold">Code Editor</h1>
+      {/* <h1 className="text-2xl font-bold">Code Editor</h1> */}
       <CodeEditor />
     </Layout>
   );
